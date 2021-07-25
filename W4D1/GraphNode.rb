@@ -22,9 +22,13 @@ class GraphNode
         nil
     end
 
-    def inspect 
-        @val 
-    end 
+    def add_neighbor(node)
+        self.neighbors << node
+    end
+
+    # def inspect 
+    #     @val 
+    # end 
 end
 
 a = GraphNode.new('a')
